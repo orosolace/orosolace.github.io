@@ -4,6 +4,11 @@ body{
 	margin: 8px;
 }
 
+h1, h2, h3 {
+	font-family: "Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
+    font-weight: 700
+}
+
 .sidebar {
 	position: fixed;
 	top: 0;
