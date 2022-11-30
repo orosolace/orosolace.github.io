@@ -1,0 +1,2285 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Chapitre 2: Classes - ADDD - One Piece</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Chapitre 2: Classes";
+        var mkdocs_page_input_path = "2_classes.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> ADDD - One Piece
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Accueil</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../0_base/">Chapitre 0: La base</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../1_races/">Chapitre 1: Races</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Chapitre 2: Classes</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#combattant">Combattant</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tableau-de-classe">Tableau de classe</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#points-de-vie">Points de vie</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#maitrises">Maitrises</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equipement">Équipement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#competences-du-combattant">Compétences du combattant</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bagarreur">Bagarreur</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#defense-sans-armure">Défense sans armure</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#fureur">Fureur</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#charger-a-travers">Charger à travers</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#style-de-combat">Style de combat</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#muscles-de-sang">Muscles de sang</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#augmentation-de-score">Augmentation de score</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#rage">Rage</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pluie-de-coups">Pluie de coups</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#carnage">Carnage</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#assaut-spirituel">Assaut spirituel</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#ruee-frenetique">Ruée frénétique</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#resolution-inflexible">Résolution inflexible</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#melee-brutale">Mêlée brutale</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#incassable">Incassable</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#melee-immortelle">Mêlée immortelle</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#rage-concentree">Rage concentrée</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#entrainement-sans-relache">Entrainement sans relâche</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#invincible">Invincible</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#le-roi">Le Roi</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#styles-de-combat">Styles de combat</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#style-du-poing-noir">Style du Poing Noir</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#style-du-dragon">Style du Dragon</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#style-de-la-bete">Style de la Bête</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#chimiste">Chimiste</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tableau-de-classe_1">Tableau de classe</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#points-de-vie_1">Points de vie</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#maitrises_1">Maitrises</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equipement_1">Équipement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#competences-du-chimiste">Compétences du chimiste</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#symboles-alchimiques">Symboles alchimiques</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#sorts">Sorts</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pouvoirs-de-creation">Pouvoirs de création</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#comment-utiliser-des-pouvoirs">Comment utiliser des pouvoirs</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hybride">Hybride</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tableau-de-classe_2">Tableau de classe</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#points-de-vie_2">Points de vie</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#maitrises_2">Maitrises</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equipement_2">Équipement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#competences-de-lhybride">Compétences de l'hybride</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#incantations">Incantations</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lignees">Lignées</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#lignee-des-seraphins">Lignée des Seraphins</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#lignee-du-germa">Lignée du Germa</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#lignee-de-la-bete">Lignée de la Bête</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tireur-delite">Tireur d'élite</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tableau-de-classe_3">Tableau de classe</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#points-de-vie_3">Points de vie</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#maitrises_3">Maitrises</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equipement_3">Équipement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#competences-du-tireur-delite">Compétences du tireur d'élite</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#yeux-de-faucon">Yeux de faucon</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#archetypes">Archétypes</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#fusilleur">Fusilleur</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#sniper">Sniper</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#chasseur-de-primes">Chasseur de primes</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#maitre-dart-marital">Maître d'art marital</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tableau-de-classe_4">Tableau de classe</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#points-de-vie_4">Points de vie</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#maitrises_4">Maitrises</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equipement_4">Équipement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#competences-du-maitre-dart-martial">Compétences du maitre d'art martial</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#defense-sans-armure_1">Défense sans armure</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ecoles-dart-martiaux">Écoles d'art martiaux</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#rokushiki">Rokushiki</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#karate-des-hommes-poissons">Karaté des hommes-poissons</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#okama-kenpo">Okama Kenpo</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pretre">Prêtre</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tableau-de-classe_5">Tableau de classe</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#points-de-vie_5">Points de vie</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#maitrises_5">Maitrises</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equipement_5">Équipement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#competences-du-pretre">Compétences du prêtre</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#pouvoir-divin">Pouvoir divin</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#domaines-divins">Domaines divins</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#domaine-du-ciel">Domaine du ciel</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#domaine-du-desert">Domaine du désert</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#domaine-de-la-mort">Domaine de la mort</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rodeur">Rôdeur</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tableau-de-classe_6">Tableau de classe</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#points-de-vie_6">Points de vie</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#maitrises_6">Maitrises</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equipement_6">Équipement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#competences-du-rodeur">Compétences du rôdeur</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#expertise">Expertise</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#archetypes_1">Archétypes</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bretteur">Bretteur</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#voleur">Voleur</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#vagabond">Vagabond</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#scalde">Scalde</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tableau-de-classe_7">Tableau de classe</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#points-de-vie_7">Points de vie</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#maitrises_7">Maitrises</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equipement_7">Équipement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#competences-du-scalde">Compétences du scalde</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#pouvoirs-spirituels">Pouvoirs spirituels</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ecoles-de-scalde">Écoles de scalde</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#ecole-de-lhypnotisme">École de l'hypnotisme</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#ecole-de-la-poesie-du-combat">École de la poésie du combat</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#ecole-de-lau-dela">École de l'au-delà</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#inventeur">Inventeur</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tableau-de-classe_8">Tableau de classe</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#points-de-vie_8">Points de vie</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#maitrises_8">Maitrises</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equipement_8">Équipement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#competences-de-linventeur">Compétences de l'inventeur</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#creation">Création</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#etudes-superieures">Études supérieures</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#science-militaire">Science militaire</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#meteorologie">Météorologie</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#robotique">Robotique</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#guerrier">Guerrier</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tableau-de-classe_9">Tableau de classe</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#points-de-vie_9">Points de vie</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#maitrises_9">Maitrises</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equipement_9">Équipement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#competences-du-guerrier">Compétences du guerrier</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#creation_1">Création</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#styles-de-combat_1">Styles de combat</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#ame-maudite">Âme maudite</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#arme-noire">Arme noire</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#arme-elementaire">Arme élémentaire</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../3_equipage_historique/">Chapitre 3: Équipage & Historique</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../4_equipement/">Chapitre 4: Équipement</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../5_talents/">Chapitre 5: Talents</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../6_fruits_du_demon_haki/">Chapitre 6: Fruits du démon & Haki</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">ADDD - One Piece</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+      <li>Chapitre 2: Classes</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="chapitre-2-classes">Chapitre 2: Classes</h1>
+<div class="admonition info">
+<h2 id="combattant">Combattant</h2>
+</div>
+<h3 id="tableau-de-classe">Tableau de classe</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Niveau</th>
+<th align="center">Bonus de maitrise</th>
+<th align="center">Dé de fureur</th>
+<th align="left">Compétences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">+2</td>
+<td align="center">1d6</td>
+<td align="left">Bagarreur, Défense sans armure</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">+2</td>
+<td align="center">1d6</td>
+<td align="left">Fureur, Charger à travers</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">+2</td>
+<td align="center">1d6</td>
+<td align="left">Style de combat, Muscles de sang</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">+2</td>
+<td align="center">1d6</td>
+<td align="left">Augmentation de score, Rage</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">+3</td>
+<td align="center">1d8</td>
+<td align="left">Pluie de coups, Carnage</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">+3</td>
+<td align="center">1d8</td>
+<td align="left">Atout du style de combat, Assaut spirituel</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">+3</td>
+<td align="center">1d8</td>
+<td align="left">Ruée frénétique, Rage inexorabble</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">+3</td>
+<td align="center">1d8</td>
+<td align="left">Augmentation de score</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">+4</td>
+<td align="center">1d8</td>
+<td align="left">Mêlée brutale</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">+4</td>
+<td align="center">1d8</td>
+<td align="left">Incassabble</td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">+4</td>
+<td align="center">1d10</td>
+<td align="left">Atout du style de combat</td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">+4</td>
+<td align="center">1d10</td>
+<td align="left">Augmentation de score</td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">+5</td>
+<td align="center">1d10</td>
+<td align="left">Mêlée immortelle</td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">+5</td>
+<td align="center">1d10</td>
+<td align="left">Rage concentrée</td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">+5</td>
+<td align="center">1d10</td>
+<td align="left">Entrainement sans relâche</td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">+5</td>
+<td align="center">1d10</td>
+<td align="left">Augmentation de score</td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">+6</td>
+<td align="center">1d12</td>
+<td align="left">Atout du style de combat</td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">+6</td>
+<td align="center">1d12</td>
+<td align="left">Invincible</td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">+6</td>
+<td align="center">1d12</td>
+<td align="left">Augmentation de score</td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">+6</td>
+<td align="center">1d12</td>
+<td align="left">Le Roi</td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-de-vie">Points de vie</h3>
+<ul>
+<li><strong>Dé de vie</strong>: 1d12 par niveau de combattant.</li>
+<li><strong>PVs au niveau 1</strong>: 12 plus votre modificateur de constitution.</li>
+<li><strong>PVs au niveaux supérieurs</strong>: 1d20 (ou 7) plus votre modificateur de constitution.</li>
+</ul>
+<h3 id="maitrises">Maitrises</h3>
+<ul>
+<li><strong>Armures</strong>: Aucune.</li>
+<li><strong>Armes</strong>: Armes simples, armes improvisées et coutelas.</li>
+<li><strong>Outils</strong>: Aucun.</li>
+<li><strong>Jets de sauvegarde</strong>: Force et constitution.</li>
+<li><strong>Compétences</strong>: Deux parmi: acrobatie, athlétisme, persuasion, intimidation, perception, manipulation d'animaux et survie.</li>
+</ul>
+<h3 id="equipement">Équipement</h3>
+<p>Vous commencez avec l'équipement suivant :</p>
+<ul>
+<li><strong>(a)</strong> un coutelas ou <strong>(b)</strong> n'importe quelle arme simple</li>
+<li><strong>(a)</strong> un pack de pirate ou <strong>(b)</strong> un pack d'exploreur</li>
+<li><strong>(a)</strong> un set d'outils d'artisanat ou <strong>(b)</strong> un set de jeu</li>
+</ul>
+<h3 id="competences-du-combattant">Compétences du combattant</h3>
+<h4 id="bagarreur">Bagarreur</h4>
+<p>Au niveau 1, votre vie de bagarre contre les bêtes, les humains et autres créatures dangereuses vous a permis de maitriser le combat à mains nues et l’utilisation d’armes de fortune.
+Vous ne pouvez pas utiliser la propriété <strong><em>Finesse</em></strong> d’une arme, ni la propriété <strong><em>À deux main</em></strong> si vous voulez vous en servir comme d’une arme de bagarreur.</p>
+<p>Les <strong><em>Arme de Bagarreur</em></strong> sont les suivantes : les <strong><em>mains nues</em></strong>, les <strong><em>armes improvisées</em></strong> et les <strong><em>coutelas</em></strong>.</p>
+<p>Vous gagnez les bénéfices suivants lorsque vous combattez avec une <strong><em>Arme de Bagarreur</em></strong> et que vous ne portez pas d’armure ou de bouclier :</p>
+<ul>
+<li>Vous pouvez jeter un <strong><em>Dé de fureur</em></strong> de dégâts au lieu du jet de dégâts régulier lorsque vous utilisez une <strong><em>Arme de Bagarreur</em></strong>.
+Ce dé évolue tel qu’indiqué dans la table de classe.</li>
+<li>Lorsque vous attaquer avec une <strong><em>Arme de Bagarreur</em></strong>, vous pouvez faire un coup à main nue ou un agrippement au prix d’une Action Bonus.</li>
+</ul>
+<h4 id="defense-sans-armure">Défense sans armure</h4>
+<p>Lorsque vous ne portez pas d’armure ni de bouclier, votre <strong><em>Classe d’Armure</em></strong> est égale à 10 plus votre modificateur de dextérité plus votre modificateur de constitution.</p>
+<h4 id="fureur">Fureur</h4>
+<p>Au niveau 2, votre entrainement vous permet de canaliser la fureur en vous.</p>
+<p>Votre accès à cette énergie est représentée sous forme de <strong><em>Points de Fureur</em></strong>.
+Votre niveau de combattant détermine le nombre de <strong><em>Points de Fureur</em></strong> dont vous disposez.
+Vous pouvez dépenser vos <strong><em>Points de Fureur</em></strong> pour utiliser différentes compétences.
+Vous récupérez vos <strong><em>Points de Fureur</em></strong> à la fin d’un court repos ou d'un long repos.</p>
+<p>Certaines compétences requière votre cible de faire un jet de sauvegarde.
+Ce jet est égal à 8 plus votre bonus de maitrise plus votre modificateur de constitution.</p>
+<p>Vos pouvoirs sont les suivantes :</p>
+<h5 id="pouvoir-coups-fulgurants">Pouvoir: Coups fulgurants</h5>
+<p>Immédiatement après avoir effectué une attaque lors de votre tour, vous pouvez dépenser 1 <strong><em>Point de Fureur</em></strong> pour faire deux attaques avec une <strong><em>Arme de Bagarreur</em></strong>, au prix d’une action bonus.</p>
+<h5 id="pouvoir-force-brute">Pouvoir: Force brute</h5>
+<p>Vous pouvez utiliser 1 <strong><em>Point de Fureur</em></strong> et une action bonus pour pousser la cible ou pour vous précipiter.</p>
+<h5 id="pouvoir-fortification">Pouvoir: Fortification</h5>
+<p>Vous utilisez votre fureur pour vous préparer à l’impact.
+Vous pouvez utiliser votre Action Bonus et dépenser 1 <strong><em>Point de Fureur</em></strong> pour gagner un nombre de PVs temporaires égal à votre niveau de combattant plus votre dé de fureur.</p>
+<h4 id="charger-a-travers">Charger à travers</h4>
+<p>Au niveau 2, autant et aussi longtemps que vous avec au moins 1 <strong><em>Point de Fureur</em></strong> disponible, vous avez avantage sur vos jets de sauvegarde de constitution contre les pièges, les sorts, le poison, les maladie ou les attaques de souffle.
+Pour gagner ce bénéfice, vous ne devez pas être incapacité.</p>
+<h4 id="style-de-combat">Style de combat</h4>
+<p>Au niveau 2, vous adoptez un style de combat (voir section 22) qui vous convient le mieux :</p>
+<ul>
+<li>Le Style du Poing Noir</li>
+<li>Le Style du Dragon</li>
+<li>Le Style de la Bête.</li>
+</ul>
+<h4 id="muscles-de-sang">Muscles de sang</h4>
+<p>Au niveau 3, lorsque vous perdez la moitié de vos PVs maximum ou plus, vous pouvez utiliser votre réaction pour gagner des PVs temporaires égal à un dé de fureur plus votre niveau de combattant et vous regagnez tous vos <strong><em>Points de Fureur</em></strong>.
+Vous ne pouvez utiliser cette compétence qu’une fois par court repos ou long repos.</p>
+<h4 id="augmentation-de-score">Augmentation de score</h4>
+<p>Au niveau 4, 8, 12, 16 et 19, vous pouvez augmenter l’une de vos caractéristique de 2 ou deux de vos caractéristique de 1.
+Alternativement, vous pouvez choisir un talent dans la liste du chapitre 6.
+Vous ne pouvez pas augmenter un score de caractéristique au-delà de 20.</p>
+<h4 id="rage">Rage</h4>
+<p>Au niveau 4, vous êtes remplit d’un sentiment de rage lors du combat.
+Au prix d’une action bonus, vous entrez dans une rage guerrière. </p>
+<p>Lorsque vous rager, vous gagnez les bénéfices et malus suivants tant que vous n’utilisez pas d’armure lourde ou de bouclier :</p>
+<ul>
+<li>Vous avez avantage sur vos jets de force et vos jets de sauvegarde de force.</li>
+<li>Vous êtes résistant au dégâts perforants, coupant et contondant.</li>
+<li>Quand une créature que vous pouvez voir dans un rayon de 5 pieds autour de vous vous touche avec une attaque de mêlée, vous pouvez utiliser votre réaction pour faire une attaque avec une <strong><em>Arme de bagarreur</em></strong> contre la créature.</li>
+<li>Vous avez désavantage sur vos jets de sauvegarde de dextérité.</li>
+<li>Les attaques faites contre vous ont avantage.</li>
+</ul>
+<p>Vous ne pouvez pas utiliser de pouvoirs ou maintenir votre concentration lors de votre rage.
+Votre rage dure une minute et se termine si vous devenez inconscient ou si vous finissez votre tour sans avoir attaqué une créature ou prit des dégâts depuis votre dernier tour.</p>
+<p>Vous pouvez utiliser votre rage un nombre de fois égal à votre bonus de maitrise avant de devoir finir un long repos pour l'utiliser à nouveau.</p>
+<h4 id="pluie-de-coups">Pluie de coups</h4>
+<p>Au niveau 5, vous pouvez attaquer deux fois au lieu d'une lorsque vous utiliser l'action attaquer.</p>
+<h4 id="carnage">Carnage</h4>
+<p>Au niveau 5, vous pouvez attaquer sans considération pour votre propre vie, or ce carnage est une lame à double tranchant.
+Lorsque vous toucher une cible avec une <strong><em>Arme de bagarreur</em></strong>, vous pouvez ajouter des dégâts supplémentaires égaux à votre dé de fureur.
+Si vous décidez de le faire, vous devez jeter un autre dé de fureur et vous infliger autant de dégâts.</p>
+<h4 id="assaut-spirituel">Assaut spirituel</h4>
+<p>Au niveau 6, vous apprenez à incorporer un peu de <strong><em>Haki</em></strong> dans vos attaques. Elles comptent comme des attaques magiques lors du calcul de résistances.</p>
+<h4 id="ruee-frenetique">Ruée frénétique</h4>
+<p>Au niveau 7, lorsque vous utilisez votre rage, vous pouvez utiliser une action bonus pour bouger jusqu'à la moitié de votre vitesse de déplacement.</p>
+<h4 id="resolution-inflexible">Résolution inflexible</h4>
+<p>Au niveau 7, vous pouvez utiliser une action pour annuler l'un des effets suivant sur vous : charmé ou apeuré.</p>
+<h4 id="melee-brutale">Mêlée brutale</h4>
+<p>Au niveau 9, lorsque vous utilisez votre rage, vos <strong><em>Armes de bagarreur</em></strong> infligent des dégâts supplémentaires équivalents à votre bonus de maitrise (arrondit suppérieur).</p>
+<h4 id="incassable">Incassable</h4>
+<p>Au niveau 10, vous n'avez plus besoin d'utiliser 1 <strong><em>Point de Fureur</em></strong> pour utiliser la compétence <strong><em>Charger à travers</em></strong>.
+De plus, vous êtes immunisé aux maladies et aux poisons.</p>
+<h4 id="melee-immortelle">Mêlée immortelle</h4>
+<p>Au niveau 13, votre rage vous permet de continuer à vous battre malgré vos blessures léthales.
+Si vous tombez à 0 PVs pendant votre rage, vous pouvez faire un jet de sauvegarde de constitution de difficulté 10.
+Si vous réussisez, vous tombez à 1 PVs au lieu de 0.</p>
+<h4 id="rage-concentree">Rage concentrée</h4>
+<p>Au niveau 14, vous n'avez plus désavantage sur vos jets de sauvegarde de dextérité lors de votre rage et vous gagnez 1 <strong><em>Point de Fureur</em></strong> dépensé lorsque vous ragez.</p>
+<p>De plus, si vous ratez un jet de sauvegarde, vous pouvez dépenser 1 <strong><em>Point de Fureur</em></strong> pour relancer le dé et vous devez utiliser le deuxième jet.</p>
+<h4 id="entrainement-sans-relache">Entrainement sans relâche</h4>
+<p>Au niveau 15, votre capacité de stockage est doublée. 
+Votre distance de saut standard est la même que votre distance de saut avec élan.</p>
+<p>De plus, quand vous gagnez 1 niveau de fatigue en raison d'une marche forcée, vous pouvez l'ignorer. 
+Vous ne pouvez utiliser cette compétence qu'une fois par long repos.</p>
+<h4 id="invincible">Invincible</h4>
+<p>Au niveau 18, lorsque vous utilisez la compétence <strong><em>Fortification</em></strong>, vous avez résistance contre tout les types de dégâts.</p>
+<h4 id="le-roi">Le Roi</h4>
+<p>Au niveau 20, vous devenez la créature la plus puissante du monde.
+Votre force et votre constitution augmentent de 2.
+Votre maximum pour ces deux caractéristiques est de 22.</p>
+<p>De plus, lorsque vous finissez un long repos, vous regagnez tous vos dés de vie au lieu de la moitié.</p>
+<h3 id="styles-de-combat">Styles de combat</h3>
+<h4 id="style-du-poing-noir">Style du Poing Noir</h4>
+<p>Ce style est utilisé par ceux qui se battent avec leur poings comme arme principale.
+Le style est nommé après la façon dont ses utilisateurs enduisent leur poings de Haki.</p>
+<h5 id="maitrise-de-lart-du-combat">Maitrise de l'art du combat</h5>
+<p>Vous maitrisez la compétence athlétisme.
+Si vous la maitrisez déjà, vous pouvez choisir acrobatie ou perspicacité.</p>
+<h5 id="posture-du-demon">Posture du démon</h5>
+<p>Au niveau 3, lorsque vous tuez un ennemi dans un rayon de 5 pieds de vous, vous gagnez des PVs temporaires équivalents à votre modificateur de constitution plus votre niveau de combattant (minimum 1).</p>
+<h5 id="plonge-dans-le-haki">Plongé dans le Haki</h5>
+<p>Au niveau 6, vous débloquez n'importe quel talent peu commun du <strong><em>Haki de l'armement</em></strong>.
+Si vous avez déjà tous les talents, vous pouvez choisir un talent peu commun pour un autre type de <strong><em>Haki</em></strong> dont vous avez les prérequis.</p>
+<h5 id="casseur-dos">Casseur d'os</h5>
+<p>Au niveau 11, vous pouvez effectuer une variété de techniques lorsque vous agrippez une cible.
+Vous pouvez utiliser un technique par tour, une fois par tour.</p>
+<ul>
+<li>
+<p><strong>Coup de tête</strong>: Vous infligez des dégâts équivalents à une attaque à mains nues.
+La cible a désavantage sur ses jets d'attaque jusqu'au début de votre prochain tour.</p>
+</li>
+<li>
+<p><strong>Destruction dorsale</strong>: Vous infligez des dégâts équivalents à une attaque à mains nues.
+Vous pouvez dépenser 1 <strong><em>Point de Fureur</em></strong> pour étourdir la cible.
+Celle-ci doit réussir un jet de sauvegarde de constitution.
+En cas d'échec, elle est étourdie jusqu'à la fin de votre prochain tour.</p>
+</li>
+<li>
+<p><strong>Suplex</strong>: Lorsque vous faites une attaque, vous pouvez dépenser 1 ou plus <strong><em>Points de Fureur</em></strong> pour suplexer une créature que vous aggripez qui est de votre taille ou plus grande.
+Si la créature rate un jet de sauvegarde de constitution contre votre sauvegarde de fureur, elle encaisse un nombre de dégâts équvalent au nombre de <strong><em>Points de Fureur</em></strong> dépensés plus trois dés de fureur en dégâts contondents.
+De plus, la créature est knocked prone.
+Si la créature réussit son jet de sauvegarde, elle n'encaisse que la moitié des dégâts.
+Après avoir utilisé cette technique, la créature n'est plus aggripée.</p>
+</li>
+</ul>
+<h5 id="maitre-du-poing-noir">Maitre du Poing Noir</h5>
+<p>Au niveau 17, vous obtenez un talent très rare du <strong><em>Haki de l'Armement</em></strong>. 
+Si vous avez déjà tous les talents très rares, rares, peu commun et commun du <strong><em>Haki de l'Armement</em></strong>, vous pouvez choisir un talent très rare ou moins rare d'un autre type de <strong><em>Haki</em></strong>, si vous avez les prérequis.</p>
+<h4 id="style-du-dragon">Style du Dragon</h4>
+<p>Ce style utilise un mixe d'attaques à mains nues et d'attaques avec des armes.
+Les pratiquants de ce style écrasent et pulvérisent leurs ennemis avec une force guidée par la rage des dragons.</p>
+<h5 id="posture-du-dragon">Posture du dragon</h5>
+<p>Au niveau 3, vos membres sont habités par l'aura d'un grand dragon. 
+Lorsque vous infligez des dégâts à une cible avec une <strong><em>Arme de bagarreur</em></strong>, vous pouvez transformer le type de dégâts en dégâts de feu, de froid ou foudroyant.</p>
+<h5 id="souffle-du-dragon">Souffle du dragon</h5>
+<p>Au niveau 3, lorsque vous utilisez l'action attaquer, vous pouvez dépenser 1 <strong><em>Point de Fureur</em></strong> pour remplacer une de vos attaques avec une explosion d'énergie draconique.
+Cette explosion peut couvrir un cône de 15 pieds ou une ligne longue de 30 pieds, large de 5 pieds. Choissez un type de dégâts : feu, froid ou foudroyant.
+Chaque créature dans la zone doit faire un jet de sauvegarde de dextérité.
+Si la créature échoue, elle prend des dégâts équivalents à deux dés de fureur.
+Si la créature réussit, elle reçoit la moitié des dégâts.</p>
+<h5 id="vitesse-fulgurante">Vitesse fulgurante</h5>
+<p>Au niveau 6, vous avez la vitesse fulgurante d'un dragon.
+Lorsque vous utilisez <strong><em>Force brute</em></strong>, vous pouvez choisir de vous téléporter jusqu'à 30 pieds vers un point que vous pouvez voir.
+Après votre téléportation, vous avez avatange sur votre prochaine attaque.</p>
+<h5 id="conquereur-des-trois-mondes">Conquéreur des trois mondes</h5>
+<p>Au niveau 11, vous pouvez créer une plus grande explosion d'énergie draconique.
+En utilisant une action, vous pouvez dépenser 2 <strong><em>Points de Fureur</em></strong> pour frapper sol, créant une immense vague d'énergie.
+Chaque créature de votre choix dans un rayon de 20 pieds autour de vous doit faire un jet de sauvegarde de dextérité contre votre sauvegarde de fureur.
+Si elle rate son jet de sauvegarde, elle prend deux dés de fureur plus votre modificateur de constitution de dégâts de feu, de froid ou foudroyants.
+Si elle réussit son jet de sauvegarde, elle subit la moitié des dégâts.</p>
+<h5 id="empereur-dragon">Empereur dragon</h5>
+<p>Au niveau 17, lorsque vous ragez, vous vous envloppez d'énergie draconique pendant une minute.
+Vous émettez de la lumière vive dans un rayon de 30 pieds et une lumière faible dans un rayon de 30 pieds après.
+Vous pouvez éteindre ou rallumer la lumière au prix d'une action bonus.</p>
+<p>Lorsque l'effet est actif, vous gagnez les bonus suivants :</p>
+<ul>
+<li>
+<p>Si un ennemi qui est dans un rayon de 30 pieds autour de vous et que vous pouvez voir vous touche avec une attaque,
+vous pouvez utiliser votre réaction pour lui infliger un dé de fureur de dégâts de feu, de froid ou foudroyant.</p>
+</li>
+<li>
+<p>Lorsque vous infligez des dégâts à une créature avec votre <strong><em>Souffle du dragon</em></strong>, l'énergie s'accroche à la cible si celle-ci rate son jet de sauvegarde.
+Au début de son tour, la créature subit un dé de fureur en dégâts du type du souffle.
+À la fin de son tour, la créature peut réessayer son jet de sauvgarde contre votre souffle pour annuler l'effet.</p>
+</li>
+</ul>
+<h4 id="style-de-la-bete">Style de la Bête</h4>
+<p>Certains combattants souhaitent avoir un allié puissant lors de leurs batailles.
+Ils sont capable d'apprivoiser des animaux sauvages grâce à leur lien avec la nature.</p>
+<div class="admonition info">
+<h2 id="chimiste">Chimiste</h2>
+</div>
+<h3 id="tableau-de-classe_1">Tableau de classe</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Niveau</th>
+<th align="center">Bonus de maitrise</th>
+<th align="left">Compétences</th>
+<th align="center">Inné</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+<th align="center">7</th>
+<th align="center">8</th>
+<th align="center">9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">+2</td>
+<td align="left">Symboles alchimistes, Pouvoirs de création</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">+2</td>
+<td align="left">Mutation de monstre, Études du chimiste</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">+2</td>
+<td align="left">-</td>
+<td align="center">2</td>
+<td align="center">4</td>
+<td align="center">2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">+2</td>
+<td align="left">Amélioration de mutation, Augmentation de score</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">+3</td>
+<td align="left">-</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">+3</td>
+<td align="left">Atout d'étude de chimiste</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">+3</td>
+<td align="left">-</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">+3</td>
+<td align="left">Amélioration de mutation, Augmentation de score</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">+4</td>
+<td align="left">-</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">+4</td>
+<td align="left">Atout d'étude de chimiste</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">+4</td>
+<td align="left">-</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">+4</td>
+<td align="left">Augmentation de score</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">+5</td>
+<td align="left">-</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">+5</td>
+<td align="left">Atout d'étude de chimiste</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">+5</td>
+<td align="left">-</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">+5</td>
+<td align="left">Augmentation de score</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">+6</td>
+<td align="left">-</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">+6</td>
+<td align="left">Recherche sur l'immortalité, Pouvoirs abominaux</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">+6</td>
+<td align="left">Augmentation de score</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">+6</td>
+<td align="left">Mutation parfaite</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-de-vie_1">Points de vie</h3>
+<ul>
+<li><strong>Dé de vie</strong>: 1d8 par niveau de chimiste.</li>
+<li><strong>PVs au niveau 1</strong>: 8 plus votre modificateur de constitution.</li>
+<li><strong>PVs au niveaux supérieurs</strong>: 1d8 (ou 6) plus votre modificateur de constitution.</li>
+</ul>
+<h3 id="maitrises_1">Maitrises</h3>
+<ul>
+<li><strong>Armures</strong>: Armures légères, armures moyennes et boucliers.</li>
+<li><strong>Armes</strong>: Massues, dagues, darts, javelots, masses d'arme, bâtons de combat, cimeterres, faucilles, frondes et lances.</li>
+<li><strong>Outils</strong>: Trousse d'herboriste et provisions d'alchimiste</li>
+<li><strong>Jets de sauvegarde</strong>: Intélligence et sagesse.</li>
+<li><strong>Compétences</strong>: Deux parmi: Arcane, manipulation d'animaux, perspicacité, medecine, nature, perception, religion et survie.</li>
+</ul>
+<h3 id="equipement_1">Équipement</h3>
+<p>Vous commencez avec l'équipement suivant :</p>
+<ul>
+<li><strong>(a)</strong> un bouclier ou <strong>(b)</strong> une arme simple</li>
+<li><strong>(a)</strong> un cimeterre ou <strong>(b)</strong> une arme de mêlée simple</li>
+<li>Une armure de cuir, un paquet d'exploreur et des provisions d'alchimiste.</li>
+</ul>
+<h3 id="competences-du-chimiste">Compétences du chimiste</h3>
+<h4 id="symboles-alchimiques">Symboles alchimiques</h4>
+<p>Vous comprenez les symboles alchimiques écrit dans les anciens plans ou les technologies avancées.
+Ces symboles font partit un code secrêt pensé par les plus grands alchimistes de ce monde et vous pouvez comprendre leur signification.</p>
+<h4 id="sorts">Sorts</h4>
+<p>Vous pouvez utiliser les sorts dans la liste des sorts des druides D&amp;D 5e.
+Vous avez une limite de sorts égale à votre modificateur de sagesse plus votre niveau de chimiste.</p>
+<h4 id="pouvoirs-de-creation">Pouvoirs de création</h4>
+<p>Au niveau 1, vous avez deux pouvoirs innés de votre choix.</p>
+<h4 id="comment-utiliser-des-pouvoirs">Comment utiliser des pouvoirs</h4>
+<p>Va lire le wiki connard.</p>
+<div class="admonition info">
+<h2 id="hybride">Hybride</h2>
+</div>
+<h3 id="tableau-de-classe_2">Tableau de classe</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Niveau</th>
+<th align="center">Bonus de maitrise</th>
+<th align="left">Compétences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-de-vie_2">Points de vie</h3>
+<ul>
+<li><strong>Dé de vie</strong>: </li>
+<li><strong>PVs au niveau 1</strong>: </li>
+<li><strong>PVs au niveaux supérieurs</strong>: </li>
+</ul>
+<h3 id="maitrises_2">Maitrises</h3>
+<ul>
+<li><strong>Armures</strong>: </li>
+<li><strong>Armes</strong>: </li>
+<li><strong>Outils</strong>: </li>
+<li><strong>Jets de sauvegarde</strong>: </li>
+<li><strong>Compétences</strong>: </li>
+</ul>
+<h3 id="equipement_2">Équipement</h3>
+<p>Vous commencez avec l'équipement suivant :</p>
+<ul>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+</ul>
+<h3 id="competences-de-lhybride">Compétences de l'hybride</h3>
+<h4 id="incantations">Incantations</h4>
+<h3 id="lignees">Lignées</h3>
+<h4 id="lignee-des-seraphins">Lignée des Seraphins</h4>
+<h4 id="lignee-du-germa">Lignée du Germa</h4>
+<h4 id="lignee-de-la-bete">Lignée de la Bête</h4>
+<div class="admonition info">
+<h2 id="tireur-delite">Tireur d'élite</h2>
+</div>
+<h3 id="tableau-de-classe_3">Tableau de classe</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Niveau</th>
+<th align="center">Bonus de maitrise</th>
+<th align="left">Compétences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-de-vie_3">Points de vie</h3>
+<ul>
+<li><strong>Dé de vie</strong>: </li>
+<li><strong>PVs au niveau 1</strong>: </li>
+<li><strong>PVs au niveaux supérieurs</strong>: </li>
+</ul>
+<h3 id="maitrises_3">Maitrises</h3>
+<ul>
+<li><strong>Armures</strong>: </li>
+<li><strong>Armes</strong>: </li>
+<li><strong>Outils</strong>: </li>
+<li><strong>Jets de sauvegarde</strong>: </li>
+<li><strong>Compétences</strong>: </li>
+</ul>
+<h3 id="equipement_3">Équipement</h3>
+<p>Vous commencez avec l'équipement suivant :</p>
+<ul>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+</ul>
+<h3 id="competences-du-tireur-delite">Compétences du tireur d'élite</h3>
+<h4 id="yeux-de-faucon">Yeux de faucon</h4>
+<h3 id="archetypes">Archétypes</h3>
+<h4 id="fusilleur">Fusilleur</h4>
+<h4 id="sniper">Sniper</h4>
+<h4 id="chasseur-de-primes">Chasseur de primes</h4>
+<div class="admonition info">
+<h2 id="maitre-dart-marital">Maître d'art marital</h2>
+</div>
+<h3 id="tableau-de-classe_4">Tableau de classe</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Niveau</th>
+<th align="center">Bonus de maitrise</th>
+<th align="left">Compétences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-de-vie_4">Points de vie</h3>
+<ul>
+<li><strong>Dé de vie</strong>: </li>
+<li><strong>PVs au niveau 1</strong>: </li>
+<li><strong>PVs au niveaux supérieurs</strong>: </li>
+</ul>
+<h3 id="maitrises_4">Maitrises</h3>
+<ul>
+<li><strong>Armures</strong>: </li>
+<li><strong>Armes</strong>: </li>
+<li><strong>Outils</strong>: </li>
+<li><strong>Jets de sauvegarde</strong>: </li>
+<li><strong>Compétences</strong>: </li>
+</ul>
+<h3 id="equipement_4">Équipement</h3>
+<p>Vous commencez avec l'équipement suivant :</p>
+<ul>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+</ul>
+<h3 id="competences-du-maitre-dart-martial">Compétences du maitre d'art martial</h3>
+<h4 id="defense-sans-armure_1">Défense sans armure</h4>
+<h3 id="ecoles-dart-martiaux">Écoles d'art martiaux</h3>
+<h4 id="rokushiki">Rokushiki</h4>
+<h4 id="karate-des-hommes-poissons">Karaté des hommes-poissons</h4>
+<h4 id="okama-kenpo">Okama Kenpo</h4>
+<div class="admonition info">
+<h2 id="pretre">Prêtre</h2>
+</div>
+<h3 id="tableau-de-classe_5">Tableau de classe</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Niveau</th>
+<th align="center">Bonus de maitrise</th>
+<th align="left">Compétences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-de-vie_5">Points de vie</h3>
+<ul>
+<li><strong>Dé de vie</strong>: </li>
+<li><strong>PVs au niveau 1</strong>: </li>
+<li><strong>PVs au niveaux supérieurs</strong>: </li>
+</ul>
+<h3 id="maitrises_5">Maitrises</h3>
+<ul>
+<li><strong>Armures</strong>: </li>
+<li><strong>Armes</strong>: </li>
+<li><strong>Outils</strong>: </li>
+<li><strong>Jets de sauvegarde</strong>: </li>
+<li><strong>Compétences</strong>: </li>
+</ul>
+<h3 id="equipement_5">Équipement</h3>
+<p>Vous commencez avec l'équipement suivant :</p>
+<ul>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+</ul>
+<h3 id="competences-du-pretre">Compétences du prêtre</h3>
+<h4 id="pouvoir-divin">Pouvoir divin</h4>
+<h3 id="domaines-divins">Domaines divins</h3>
+<h4 id="domaine-du-ciel">Domaine du ciel</h4>
+<h4 id="domaine-du-desert">Domaine du désert</h4>
+<h4 id="domaine-de-la-mort">Domaine de la mort</h4>
+<div class="admonition info">
+<h2 id="rodeur">Rôdeur</h2>
+</div>
+<h3 id="tableau-de-classe_6">Tableau de classe</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Niveau</th>
+<th align="center">Bonus de maitrise</th>
+<th align="left">Compétences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-de-vie_6">Points de vie</h3>
+<ul>
+<li><strong>Dé de vie</strong>: </li>
+<li><strong>PVs au niveau 1</strong>: </li>
+<li><strong>PVs au niveaux supérieurs</strong>: </li>
+</ul>
+<h3 id="maitrises_6">Maitrises</h3>
+<ul>
+<li><strong>Armures</strong>: </li>
+<li><strong>Armes</strong>: </li>
+<li><strong>Outils</strong>: </li>
+<li><strong>Jets de sauvegarde</strong>: </li>
+<li><strong>Compétences</strong>: </li>
+</ul>
+<h3 id="equipement_6">Équipement</h3>
+<p>Vous commencez avec l'équipement suivant :</p>
+<ul>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+</ul>
+<h3 id="competences-du-rodeur">Compétences du rôdeur</h3>
+<h4 id="expertise">Expertise</h4>
+<h3 id="archetypes_1">Archétypes</h3>
+<h4 id="bretteur">Bretteur</h4>
+<h4 id="voleur">Voleur</h4>
+<h4 id="vagabond">Vagabond</h4>
+<div class="admonition info">
+<h2 id="scalde">Scalde</h2>
+</div>
+<h3 id="tableau-de-classe_7">Tableau de classe</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Niveau</th>
+<th align="center">Bonus de maitrise</th>
+<th align="left">Compétences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-de-vie_7">Points de vie</h3>
+<ul>
+<li><strong>Dé de vie</strong>: </li>
+<li><strong>PVs au niveau 1</strong>: </li>
+<li><strong>PVs au niveaux supérieurs</strong>: </li>
+</ul>
+<h3 id="maitrises_7">Maitrises</h3>
+<ul>
+<li><strong>Armures</strong>: </li>
+<li><strong>Armes</strong>: </li>
+<li><strong>Outils</strong>: </li>
+<li><strong>Jets de sauvegarde</strong>: </li>
+<li><strong>Compétences</strong>: </li>
+</ul>
+<h3 id="equipement_7">Équipement</h3>
+<p>Vous commencez avec l'équipement suivant :</p>
+<ul>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+</ul>
+<h3 id="competences-du-scalde">Compétences du scalde</h3>
+<h4 id="pouvoirs-spirituels">Pouvoirs spirituels</h4>
+<h3 id="ecoles-de-scalde">Écoles de scalde</h3>
+<h4 id="ecole-de-lhypnotisme">École de l'hypnotisme</h4>
+<h4 id="ecole-de-la-poesie-du-combat">École de la poésie du combat</h4>
+<h4 id="ecole-de-lau-dela">École de l'au-delà</h4>
+<div class="admonition info">
+<h2 id="inventeur">Inventeur</h2>
+</div>
+<h3 id="tableau-de-classe_8">Tableau de classe</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Niveau</th>
+<th align="center">Bonus de maitrise</th>
+<th align="left">Compétences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-de-vie_8">Points de vie</h3>
+<ul>
+<li><strong>Dé de vie</strong>: </li>
+<li><strong>PVs au niveau 1</strong>: </li>
+<li><strong>PVs au niveaux supérieurs</strong>: </li>
+</ul>
+<h3 id="maitrises_8">Maitrises</h3>
+<ul>
+<li><strong>Armures</strong>: </li>
+<li><strong>Armes</strong>: </li>
+<li><strong>Outils</strong>: </li>
+<li><strong>Jets de sauvegarde</strong>: </li>
+<li><strong>Compétences</strong>: </li>
+</ul>
+<h3 id="equipement_8">Équipement</h3>
+<p>Vous commencez avec l'équipement suivant :</p>
+<ul>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+</ul>
+<h3 id="competences-de-linventeur">Compétences de l'inventeur</h3>
+<h4 id="creation">Création</h4>
+<h3 id="etudes-superieures">Études supérieures</h3>
+<h4 id="science-militaire">Science militaire</h4>
+<h4 id="meteorologie">Météorologie</h4>
+<h4 id="robotique">Robotique</h4>
+<div class="admonition info">
+<h2 id="guerrier">Guerrier</h2>
+</div>
+<h3 id="tableau-de-classe_9">Tableau de classe</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Niveau</th>
+<th align="center">Bonus de maitrise</th>
+<th align="left">Compétences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">+2</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">+3</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">+4</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">+5</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">+6</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-de-vie_9">Points de vie</h3>
+<ul>
+<li><strong>Dé de vie</strong>: </li>
+<li><strong>PVs au niveau 1</strong>: </li>
+<li><strong>PVs au niveaux supérieurs</strong>: </li>
+</ul>
+<h3 id="maitrises_9">Maitrises</h3>
+<ul>
+<li><strong>Armures</strong>: </li>
+<li><strong>Armes</strong>: </li>
+<li><strong>Outils</strong>: </li>
+<li><strong>Jets de sauvegarde</strong>: </li>
+<li><strong>Compétences</strong>: </li>
+</ul>
+<h3 id="equipement_9">Équipement</h3>
+<p>Vous commencez avec l'équipement suivant :</p>
+<ul>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+<li><strong>(a)</strong>  ou <strong>(b)</strong> </li>
+</ul>
+<h3 id="competences-du-guerrier">Compétences du guerrier</h3>
+<h4 id="creation_1">Création</h4>
+<h3 id="styles-de-combat_1">Styles de combat</h3>
+<h4 id="ame-maudite">Âme maudite</h4>
+<h4 id="arme-noire">Arme noire</h4>
+<h4 id="arme-elementaire">Arme élémentaire</h4>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../1_races/" class="btn btn-neutral float-left" title="Chapitre 1: Races"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../3_equipage_historique/" class="btn btn-neutral float-right" title="Chapitre 3: Équipage & Historique">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../1_races/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../3_equipage_historique/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
