@@ -68,7 +68,7 @@ data_movement = [
     {
         title: "Saut en hauteur",
         icon: "wingfoot",
-        subtitle: "Coût: 5ft per 5ft",
+        subtitle: "Coût: 1.5m par 1.5m",
         description: "Déplacement dépensé: 1.5m par 1.5m sauté",
         reference: "PHB, pg. 182.",
         bullets: [
